@@ -34,5 +34,27 @@ c)
 ```
 
 ## Exercise II
+Given an n story building
+
+* assign varibles upper, lower and middle
+* initialize middle to n/2
+* initialize upper to n
+* initialize lower to 0
+* initialize f to middle
+* loop  - while n
+  + Climb to middle building and drop an egg
+  + if breaks
+      + set upper to middle 
+      + set middle to (middle - lower) / 2
+  + else if it doesn't break
+      + set lower to middle
+      + set f to middle
+      + set middle to (upper - middle)/2
+  + n /= 2
+* return f
+
+> The run time complexity of the algorithm is O(logn)
+
+
 
 
